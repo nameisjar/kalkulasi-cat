@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kalkulasi Cat Kapal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulasi Cat Kapal</h1>
+
+        <label>Panjang Kapal (Meter)</label>
+        <input type="number" id="length" placeholder="contoh: 10">
+
+        <label>Lebar Kapal (Meter)</label>
+        <input type="number" id="width" placeholder="contoh: 3">
+
+        <label>Tinggi Kapal (Meter)</label>
+        <input type="number" id="height" placeholder="contoh: 2">
+        
+        <label>Jumlah lapisan cat</label>
+        <input type="number" id="layer" value="2">
+
+        <label>Daya sebar cat (m2 / liter)</label>
+        <input type="number" id="coverage" value="10">
+
+        <label>isi 1 kaleng cat (liter)</label>
+        <input type="number" id="canSize" value="2">
+
+        <button onclick="calculatePaint()">Hitung Kebutuhan Cat</button>
+        
+        <div class="result" id="result" style="display: none;">
+            <p><strong>Luas permukaan kapal:</strong><span id="area"></span> m2</p>
+            <p><strong>Total kebutuhan cat:</strong><span id="paint"></span> liter</p>
+            <p><strong>Jumlah kaleng cat:</strong><span id="cans"></span> kaleng</p>
+
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
